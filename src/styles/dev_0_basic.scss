@@ -14,7 +14,14 @@ img{vertical-align:bottom;border:0;max-width:100%;}
 
 /* wraps styling*/
 
-.mbox{max-width:1024px;width:100%;margin:0 auto;position:relative;z-index:1;}
+.mbox{
+    max-width:960px;
+    width:100%;
+    padding: 0 10px;
+    margin:0 auto;
+    position:relative;
+    z-index:1;
+}
 .mbox:after{content:"";clear:both;font-size:1px;line-height:1px;height:0;overflow:hidden;display:block;}
 
 /* /wraps styling*/
@@ -32,7 +39,7 @@ input, textarea{
 /*fonts*/
 
 @mixin font-face($style-name, $file:$style-name, $weight:normal, $style:normal) {
-    $filepath: "/fonts/" + $file;
+    $filepath: "../fonts/" + $file;
     @font-face {
         font-family: quote($style-name);
         src: url($filepath + ".eot");
@@ -46,6 +53,12 @@ input, textarea{
 }
 
 //  example->    @include font-face('PFDinTextPro', 'PFDinTextPro-Bold', 700, italic);
+
+@include font-face('MyriadPro', 'MyriadProLight', 300);
+@include font-face('MyriadPro', 'MyriadProRegular', 400);
+@include font-face('MyriadPro', 'MyriadProSemiBold', 600);
+@include font-face('MyriadPro', 'MyriadProBold', 700);
+
 
 /*/fonts*/
 
@@ -70,6 +83,9 @@ input, textarea{
 
 /* styles for wp-admin panel */
 body{
+    font-family: 'MyriadPro';
+    background-color: #fff;
+    
     &.customize-support{
         .wp-panel-show{top:32px;} //fixed elements (if their has top:0) must has class .wp-panel-show
     }
@@ -77,6 +93,7 @@ body{
 @media screen and (max-width: 782px){
 
     body{
+
         &.customize-support{
             .wp-panel-show{top:46px;}
         }
