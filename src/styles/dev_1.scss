@@ -51,7 +51,7 @@ button {
         margin-top: -15px;
         display: flex;
         justify-content: center;
-    }
+    }    
     .bot-row{
         width: 100%;
         margin-bottom: -5px;
@@ -78,6 +78,13 @@ button {
                 transition: all 0.3s;
             }
             &:hover a{
+                color: #c2282f;
+            }
+        }
+        .active{
+            border-bottom: 5px solid #c2282f;
+
+            a{
                 color: #c2282f;
             }
         }
@@ -206,6 +213,7 @@ button {
         font-size: 48px;
         color: #c23139;
         font-weight: 400;
+        margin-bottom: 27px;
     }
     .row{
         width: 100%;
@@ -315,6 +323,177 @@ button {
 
 // end online section 1
 
+// AuPair section 1
+
+.AuPair-section-1{
+    width: 100%;
+    padding-bottom: 80px;
+
+    .title{
+        padding-top: 70px;
+        text-align: center;
+        margin-bottom: 30px;
+
+        p{
+            font-size: 22px;
+            font-weight: 400;
+            color: #363435;
+        }
+        span{
+            color: #177bc0;
+            font-weight: 700;
+        }
+    }
+    h1{
+        font-size: 48px;
+        color: #c23139;
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
+    .wrapp{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .text{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-right: 45px;
+        }
+        img{
+            max-width: none;
+        }
+        p{
+            color: #363435;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 0.3px;
+            line-height: 20px;
+        }
+        a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 323px;
+            height: 45px;
+            background-color: #c23139;
+            border-radius: 23px;
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+            transition: all 0.3s;
+
+            &:hover{
+                background-color: #99262c;
+            }
+        }
+    }
+}
+
+// end AuPair section 1
+
+// price section
+
+.price-section{
+    width: 100%;
+    padding-bottom: 80px;
+
+    .title{
+        padding-top: 70px;
+        text-align: center;
+        margin-bottom: 60px;
+
+        p{
+            font-size: 22px;
+            font-weight: 400;
+            color: #363435;
+        }
+        span{
+            color: #177bc0;
+            font-weight: 700;
+        }
+    }
+    h1{
+        font-size: 48px;
+        color: #c23139;
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
+    a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 323px;
+        height: 45px;
+        margin: 0 auto;
+        background-color: #c23139;
+        border-radius: 23px;
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+        transition: all 0.3s;
+
+        &:hover{
+            background-color: #99262c;
+        }
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 95px;        
+    }
+    .top-row{
+        padding-top: 55px;
+    }
+    .bottom-row{
+        justify-content: center;
+
+        .price-item{
+            margin: 0 10px;
+        }
+    }
+    .price-item{
+        width: 220px;
+        height: 230px;
+        background-color: #d2fff8;
+        border: 4px solid #b2d9d3;
+        border-radius: 10px;
+        text-align: center;
+
+        h3{
+            color: #363435;
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            position: relative;
+
+            &:after{
+                content: '';
+                position: absolute;
+                bottom: -17px;
+                left: 50%;
+                margin-left: -22px;
+                width: 45px;
+                height: 1px;
+                background-color: #363435;
+            }
+        }
+        p{
+            color: #363435;
+            font-size: 30px;
+            line-height: 30px;
+            font-weight: 400;
+        }
+        img{
+            margin-top: -65px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+// price section
+
 // section 2
 
 .section-2{
@@ -414,9 +593,73 @@ button {
     }
 }
 
-// end swction 2
+// end section 2
 
-// swction 3
+// AuPair section 2
+
+.AuPair-section-2{
+    width: 100%;
+    padding: 75px 0 70px;
+    border-bottom: 5px solid #fff;
+    color: #fff;
+    background: url('../images/au-bg-2.jpg')top center no-repeat;
+    background-size: cover;
+
+    h2{
+        color: white;
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+    li{
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.3px;
+        line-height: 20px;
+        margin-bottom: 15px;
+        position: relative;
+
+        &:before{
+            content: '';
+            position: absolute;
+            top: 6px;
+            width: 8px;
+            height: 8px;
+            border-right: 4px solid #177bc0;
+            border-bottom: 4px solid #177bc0;
+        }
+    }
+    .row{
+        width: 100%;
+
+        &:first-child{
+            margin-bottom: 70px;
+
+            li{
+                padding-left: 20px;
+            }
+            li:before{
+                left: 0;
+                transform: rotate(-45deg);
+            }
+        }
+        &:last-child{
+            text-align: right;
+
+            li{
+                padding-right: 20px;
+            }
+            li:before{
+                right: 0;
+                transform: rotate(125deg);
+            }
+        }
+    }
+}
+
+// end AuPair section 2
+
+// section 3
 
 .section-3{
     width: 100%;
@@ -449,9 +692,9 @@ button {
     }
 }
 
-// end swction 3
+// end section 3
 
-// swction 4
+// section 4
 
 .section-4{
     width: 100%;
@@ -517,7 +760,7 @@ button {
     }
 }
 
-// end swction 4
+// end section 4
 
 // footer
 
@@ -588,3 +831,102 @@ button {
 }
 
 // end footer
+
+// pop Up
+
+#call-popup{
+    background: url('../images/ban.jpg');
+    padding: 15px;
+
+    form{
+        background: #fff;
+        padding: 35px 175px 40px;
+
+        input{
+            width: 100%;
+            text-align: center;
+            color: #363435;
+            font-size: 16px;
+            font-weight: 400;
+            padding: 10px 0;
+            background: transparent;
+            border: 1px solid transparent;
+            border-bottom: 1px solid #000;
+            margin-bottom: 15px;
+        }
+        button{
+            width: 100%;
+            height: 45px;
+            background-color: #c23139;
+            border-radius: 23px;
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+            border: none;
+            transition: all 0.3s;
+
+            &:hover{
+                background-color: #99262c;
+            }
+        }
+    }
+    .fancybox-close-small{
+        display: none;
+    }
+    .contact-form-title{
+        text-align: center;
+        margin-bottom: 55px;
+
+        p{
+            font-size: 22px;
+            font-weight: 400;
+            color: #363435;
+        }
+        h1{
+            font-size: 48px;
+            color: #c23139;
+            font-weight: 400;
+            margin-bottom: 15px;
+        }
+        span{
+            color: #177bc0;
+            font-weight: 700;
+        }
+    }
+    .selecter-selected{
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid #000;
+        text-align: center;
+        color: #363435;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .selecter{
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .selecter-options{
+        max-height: 120px;
+    }
+}
+#call_success{
+    background: url('../images/ban.jpg');
+    padding: 15px;
+
+    .call-success-wrap{
+        text-align: center;
+        background: #fff;
+        padding: 120px 120px;
+        color: #c23139;
+        font-size: 36px;
+        font-weight: 700;
+    }
+    .fancybox-close-small{
+        display: none;
+    }
+    h2{
+        margin-bottom: 50px;
+    }
+}

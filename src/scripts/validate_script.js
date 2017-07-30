@@ -38,7 +38,7 @@ function validate(form, options){
             },
             highlight: function(element, errorClass, validClass) {
                 $(element).addClass('error');
-                $(element).closest('.form_row').addClass('error').removeClass('valid');
+                $(element).closest('.form_row input').addClass('error').removeClass('valid');
                 if( typeof(setings.highlightFunction) === 'function' ) {
                     setings.highlightFunction(form);
                 }

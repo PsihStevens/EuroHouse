@@ -62,7 +62,7 @@ function animationBlock(item){
 * GO TO href (smooth)
 */
 function goTo(){
-    $('.header-menu a').click(function(e){
+    $('header .GoTo').click(function(e){
         e.preventDefault();
         var href = $(this).attr('href');
         var target = $(href).offset().top-65;
